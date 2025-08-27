@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Copper Spoon</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">The Copper Spoon</a>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle">&#9776;</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to The Copper Spoon</h1>
+      <p>Experience the finest culinary delights in town.</p>
+      <a href="#menu" class="btn">View Menu</a>
+    </div>
+    <img src="image1.jpg" alt="Elegant dining with wine and salad at The Copper Spoon" class="hero-bg-img">
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>The Copper Spoon is a family-owned eatery blending classic flavors with modern twists. Our chefs use only the freshest ingredients to craft unforgettable meals in a cozy and elegant setting. Join us for a memorable dining experience, whether it’s breakfast, lunch, or dinner.</p>
+      </div>
+      <div class="about-image">
+        <img src="image2.jpg" alt="The Copper Spoon stylish interior and appetizer plate">
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+        <button class="filter-btn" data-filter="lunch">Lunch</button>
+        <button class="filter-btn" data-filter="dinner">Dinner</button>
+      </div>
+      <div class="menu-items" id="menuItems">
+        <!-- Menu items rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required minlength="2" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@email.com">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required minlength="10" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+        <div class="form-message" id="formMessage"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 The Copper Spoon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
