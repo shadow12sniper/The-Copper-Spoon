@@ -62,56 +62,56 @@ const menuData = [
     category: "breakfast",
     price: "$8.50",
     desc: "Sourdough bread topped with smashed avocado, poached egg, and microgreens.",
-    img: "image3.jpg"
+    img: "image4.jpg"
   },
   {
     title: "Grilled Chicken Caesar",
     category: "lunch",
     price: "$12.00",
     desc: "Grilled chicken, romaine lettuce, parmesan, croutons, and house-made Caesar dressing.",
-    img: "image2.jpg"
+    img: "image5.jpg"
   },
   {
     title: "Truffle Burger",
     category: "lunch",
     price: "$14.50",
     desc: "Angus beef patty, truffle aioli, cheddar, lettuce, tomato, on brioche bun.",
-    img: "image2.jpg"
+    img: "image6.jpg"
   },
   {
     title: "Steak Frites",
     category: "dinner",
     price: "$21.00",
     desc: "Chargrilled sirloin steak, herb butter, served with crispy fries.",
-    img: "image1.jpg"
+    img: "image7.jpg"
   },
   {
     title: "Miso Glazed Salmon",
     category: "dinner",
     price: "$19.00",
     desc: "Pan-seared salmon, miso glaze, jasmine rice, and stir-fried vegetables.",
-    img: "image1.jpg"
+    img: "image8.jpg"
   },
   {
     title: "French Toast",
     category: "breakfast",
     price: "$10.00",
     desc: "Brioche dipped in cinnamon batter, served with berries and maple syrup.",
-    img: "image3.jpg"
+    img: "image9.jpg"
   },
   {
     title: "Caprese Sandwich",
     category: "lunch",
     price: "$11.00",
     desc: "Fresh mozzarella, tomatoes, basil pesto, on ciabatta bread.",
-    img: "image2.jpg"
+    img: "image10.jpg"
   },
   {
     title: "Lemon Herb Chicken",
     category: "dinner",
     price: "$18.00",
     desc: "Roasted chicken breast, lemon herb sauce, and seasonal vegetables.",
-    img: "image1.jpg"
+    img: "image11.jpg"
   },
 ];
 
