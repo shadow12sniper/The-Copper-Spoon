@@ -4,7 +4,6 @@ const navLinks = document.getElementById('navLinks');
 
 navToggle.addEventListener('click', () => {
   navLinks.classList.toggle('open');
-  // Lock scroll on mobile when nav is open
   if (navLinks.classList.contains('open')) {
     document.body.style.overflow = 'hidden';
   } else {
@@ -25,6 +24,20 @@ document.querySelectorAll('.nav-link').forEach(link => {
   });
 });
 
+// Sticky Navbar: Hide on scroll up, show on scroll down
+let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  let st = window.pageYOffset || document.documentElement.scrollTop;
+  if (st > lastScrollTop && st > 80) {
+    // Scrolling down
+    navbar.style.top = "-80px";
+  } else {
+    // Scrolling up
+    navbar.style.top = "0";
+  }
+  lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+});
 // Sticky Navbar: Add active class on scroll
 window.addEventListener('scroll', () => {
   const navbar = document.getElementById('navbar');
